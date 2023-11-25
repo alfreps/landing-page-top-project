@@ -11,6 +11,10 @@ header, footer {
     background-color: #1f2937;
 }
 
+header, main, footer {
+    padding: 0 256px;
+}
+
 h1 {
     font-size: 48px;
     font-weight: 800;
@@ -32,12 +36,12 @@ h2 {
     font-weight: 800;
 }
 
-h3 {
+h3, .btn {
     font-size: 24px;
     color: #f9faf8;
 }
 
-.secondary-text, .header-links > li > a, .btn {
+.secondary-text, .header-links > li > a, footer {
     font-size: 18px;
     color: #e5e7eb;
 }
@@ -56,7 +60,136 @@ h3 {
 }
 
 .quote-text {
+    font-family: Roboto, sans-serif;
     font-size: 36px;
     font-weight: 300;
     font-style: italic;
+}
+
+footer {
+    color: #f9faf8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 0;
+}
+
+.hero-elements {
+    padding: 64px 0 128px 0;
+}
+
+.header {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 0;
+}
+
+.header-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+.hero-elements {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-container {
+    width: 600px;
+}
+
+.right-container {
+    background-color: grey;
+    width: 600px;
+    height: 300px;
+}
+
+.btn {
+    font-weight: 600;
+    padding: 8px 32px;
+    border: none;
+    border-radius: 8px;    
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.information {
+    text-align: center;
+}
+
+.context {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 64px;
+}
+
+.context-elements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: grey;
+}
+
+.context-elements > div {
+    width: 150px;
+    height: 150px;
+    border: 3px solid #3882f6;
+    border-radius: 8%;
+}
+
+.context-elements > p {
+    width: 150px;
+}
+
+.quote {
+    width: 100vw;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quote-text {
+    padding: 64px 550px 0 550px;
+}
+
+.author {
+    padding: 0 300px 48px 800px;
+}
+
+.cta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 128px 0;
+    border-radius: 8px;
+    padding: 32px 0;
+}
+
+.wrapper {
+    padding: 0 200px;
+}
+
+.cta-btn {
+    border: 3px solid #f9faf8;
+    margin-right: 200px;
+}
+
+.wrapper > p {
+    color: #e5e7eb;
 }
