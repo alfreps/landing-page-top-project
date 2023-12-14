@@ -193,3 +193,7 @@ main {
 .wrapper > p {
     color: #e5e7eb;
 }
+
+.logo-image {
+    width: 128px;
+}
